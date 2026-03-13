@@ -43,7 +43,7 @@ Note here that the optimal solution `opt_solution` consists of the indices of th
 To solve the fractional version (LP relaxation) of the problem, we simply use the `solveFractionalKP()`-function:
 
 ```
-Data for the instance
+# Data for the instance
 p = [27, 18, 43, 40, 55, 15, 10, 91, 90, 95]  # Profits
 w = [20, 2, 16, 30, 19, 42, 2, 21, 13, 2]  # Weights
 cap = 80  # Capacity
