@@ -11,7 +11,8 @@ Here we are again given $n$ items but we can now add fractions of items to the i
 
 ## Example
 To solve a 0-1 knapsack problem, one simply
-``
+
+```
 import time  # For timing the algorithms
 import KPdp as Knapsack  # Provides the algorithms
 
@@ -30,4 +31,4 @@ opt_value, opt_solution = kpsolver.solve_knapsack()  # Solve the knapsack proble
 print(f'Total time for DP-algorithm is {time.time() - start} seconds')
 print (f'Optimal solution value is {opt_value}')  # Print the optimal objective function value
 print(f'Optimal consists of items: {opt_solution}')  # Print indices of included items
-``
+```
