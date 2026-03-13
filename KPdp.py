@@ -80,6 +80,7 @@ class KPsolver:
         # If no items have positive profit, the optimal solution is trivially zero
         if not positive_indices:
             self.optValue = 0
+            self.zeroOneSolved = True
             return 0, []
 
         reduced_profits = self.profits[positive_indices]
@@ -108,6 +109,7 @@ class KPsolver:
         included_indices = [positive_indices[i] for i in included_reduced]
 
         self.optValue = dp[n_reduced, self.capacity]
+        self.zeroOneSolved = True
         return self.optValue, included_indices
 
     def solveFractionalKP(self):
